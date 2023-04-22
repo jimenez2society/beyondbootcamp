@@ -1,0 +1,40 @@
+.card-link {
+  text-decoration: none;
+  color: var(--tertiary-link);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.card-link-right {
+  align-self: flex-end;
+}
+.lg {
+  font-size: 12px;
+}
+.sm {
+  font-size: 8px;
+}
+.sm svg {
+  width: 16px;
+  height: 4px;
+}
+.lg svg {
+  width: 26px;
+  height: 6px;
+}
+@media screen and (max-width: 545px) {
+  .lg {
+    font-size: 8px;
+  }
+  .sm {
+    font-size: 8px;
+  }
+  .sm svg {
+    width: 16px;
+    height: 4px;
+  }
+  .lg svg {
+    width: 16px;
+    height: 4px;
+  }
+}

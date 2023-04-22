@@ -1,0 +1,29 @@
+.CardContent.lg {
+  font-size: 16px;
+  line-height: 27.26px;
+  margin-bottom: 30px;
+}
+.CardContent.sm {
+  font-size: 12px;
+  line-height: 16.14px;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+@media screen and (max-width: 1142px) {
+  .Card.sm.span {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 545px) {
+  .CardContent.lg {
+    font-size: 10px;
+    line-height: 16.14px;
+    margin-bottom: 30px;
+  }
+  .CardContent.sm {
+    font-size: 10px;
+    line-height: 16.14px;
+    margin-bottom: 10px;
+    min-height: 60px;
+  }
+}

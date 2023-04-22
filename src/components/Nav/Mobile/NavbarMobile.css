@@ -1,0 +1,14 @@
+.NavbarMobile {
+  display: none;
+}
+@media screen and (max-width: 595px) {
+  .NavbarMobile {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Navbar-logo-mobile {
+    display: block;
+  }
+}

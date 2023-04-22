@@ -1,0 +1,31 @@
+.Card {
+  background-color: var(--card-bg);
+  color: var(--text-light);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--border-reg);
+  display: flex;
+  flex-direction: column;
+}
+.Card.lg {
+  padding: 20px 35px;
+}
+.Card.sm {
+  padding: 10px 20px;
+  min-height: 140px;
+}
+@media screen and (max-width: 1142px) {
+  .Card.sm.span {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 545px) {
+  .Card.sm {
+    padding: 10px 20px;
+    min-height: 0px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .Card.lg {
+    padding: 20px 20px;
+  }
+}

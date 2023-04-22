@@ -1,0 +1,26 @@
+.Container {
+  background-color: var(--primary);
+  min-height: 100vh;
+  padding: 0 60px;
+}
+@media screen and (max-width: 1142px) {
+  .Container {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .Container {
+    padding: 0 30px;
+  }
+  .Container {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 333px) {
+  .Container {
+    padding: 0 15px;
+  }
+  .Container {
+    padding-bottom: 60px;
+  }
+}

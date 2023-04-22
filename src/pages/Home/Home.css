@@ -1,0 +1,135 @@
+.Home {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+.Home-heading {
+  grid-column: 3/-1;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.Home-main {
+  grid-column: 3/11;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 20px;
+  position: relative;
+}
+.mainPageHeadingTablet,
+.mainPageHeadingPhone {
+  display: none;
+}
+.dotStraight {
+  position: absolute;
+  transform: translateX(calc(-100% - 20px));
+  top: 200px;
+}
+.dotCurved {
+  position: absolute;
+  right: 0;
+  transform: translate(calc(55% - 10px), calc(-25% - 10px));
+}
+.left {
+  grid-column: 1/5;
+  min-height: 445px;
+}
+.right {
+  grid-column: 5/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-height: 445px;
+}
+@media screen and (max-width: 1830px) {
+  .Home-main {
+    grid-column: 2/12;
+  }
+  .Home-heading {
+    grid-column: 2/-1;
+  }
+}
+@media screen and (max-width: 1830px) {
+  .Home-main {
+    grid-column: 1/13;
+  }
+  .Home-heading {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 1142px) {
+  .Home-main {
+    grid-column: 1/13;
+    padding: 0 118px;
+  }
+  .Home-heading {
+    grid-column: 1/-1;
+    padding-left: 118px;
+    padding-right: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainPageHeadingDesktop {
+    display: none;
+  }
+  .mainPageHeadingTablet {
+    display: block;
+  }
+  .left {
+    grid-column: 1/-1;
+    min-height: max-content;
+    margin-bottom: 13px;
+  }
+  .right {
+    grid-column: 1/-1;
+    display: grid;
+    min-height: max-content;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dotStraight {
+    display: none;
+  }
+  .dotCurved {
+    transform: translate(calc(-125% - 10px), calc(-25% - 10px));
+  }
+}
+@media screen and (max-width: 916px) {
+  .Home-main {
+    padding: 0 30px;
+  }
+  .dotCurved {
+    transform: translate(0, calc(-25% - 10px));
+  }
+}
+@media screen and (max-width: 700px) {
+  .Home-main {
+    padding: 0 0px;
+  }
+  .dotCurved {
+    transform: translate(calc(55% - 10px), calc(-25% - 10px));
+  }
+}
+@media screen and (max-width: 590px) {
+  .dotCurved {
+    display: none;
+  }
+}
+@media screen and (max-width: 545px) {
+  .right {
+    grid-column: 1/-1;
+    display: grid;
+    min-height: max-content;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainPageHeadingPhone {
+    display: block;
+  }
+  .mainPageHeadingTablet {
+    display: none;
+  }
+}
+/* card */
+
+/* sections */
