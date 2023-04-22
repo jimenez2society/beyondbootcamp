@@ -59,7 +59,7 @@ function Home() {
             />
           </Card>
           <Card sm>
-            <CardTitle sm text="Resume" />
+            <CardTitle sm text="Interview" />
             <CardContent sm>
               Resume events refer to activities or experiences that are added to
               a resume to highlight one's skills, qualifications, and
@@ -73,7 +73,7 @@ function Home() {
             />
           </Card>
           <Card span sm>
-            <CardTitle sm text="Resume" />
+            <CardTitle sm text="Career" />
             <CardContent sm>
               Resume events refer to activities or experiences that are added to
               a resume to highlight one's skills, qualifications, and
